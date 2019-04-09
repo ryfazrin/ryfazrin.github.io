@@ -37,11 +37,22 @@ const Berita = Vue.extend({
     }
   }
 });
+// komponenen tentang
+const Tentang = Vue.extend({
+  template: '#tentang',
+  data: function() {
+    return {
+      judul: 'TENTANG',
+      konten: 'Ini tentang kita yaitu vue'
+    }
+  }
+});
 
 // 2. Definisikan routing menuju komponen
 const routes = [
   { path: '/', component: Home},
-  { path: '/berita', component: Berita }
+  { path: '/berita', component: Berita },
+  { path: '/tentang', component: Tentang}
 ]
 
 // 3. Buat instance Router Vue
