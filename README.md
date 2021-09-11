@@ -1,21 +1,11 @@
-#Matrialize-Portfolio
+#Ryfazrin Profile
 
-A portfolio template designed using Materialize.
+Welcome my home! You can open my home with this repo name.
 
-You are welcome to contribute in this repository.
+## CSS
 
-## Inspiration
-
-Inspiration is to Materialize my portfolio website [ http://2014.nikhilmaheshwari.com ] using Materialize [ http://materializecss.com/ ]
-
-## Installation
-
-Modify below in existing code : 1. Website Logo 2. Images 3. Content 4. Contact form
+[wiredjs](https://wiredjs.com/)
 
 ## Contributors
 
-Nikhil Maheshwari  [ http://www.nikhilmaheshwari.com ]
-
-## Demo
-
-http://materialize-portfolio.nikhilmaheshwari.com
+Ryan Pazrin  [ https://github.com/ryfazrin ]
