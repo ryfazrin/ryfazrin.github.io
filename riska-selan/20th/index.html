@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <audio id="song" src="song.mp3" loop autoplay></audio>
   <p id="timer"></p>
 
   <div id="card" class="birthdayCard hidden">
@@ -32,9 +33,11 @@
     </div>
 
   <script>
+    document.getElementById("song").muted = true;
     // Set the date we're counting down to
+    // var countDownDate = new Date("Mar 18, 2022 23:46:00").getTime();
     var countDownDate = new Date("Mar 19, 2022 00:00:00").getTime();
-
+    
     // Update the count down every 1 second
     var x = setInterval(function () {
 
@@ -53,16 +56,18 @@
       // Output the result in an element with id="demo"
       document.getElementById("timer").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
-
+      
+        // window.onload = function() {
+        //   var audio = new Audio('song.mp3');
+        // audio.play();
+        // }
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
         // document.getElementById("timer").innerHTML = "EXPIRED";
         document.getElementById("timer").classList.add("hidden");
         document.getElementById("card").classList.remove("hidden");
-
-        var audio = new Audio('song.mp3');
-        audio.play();
+        document.getElementById("song").muted = false;
       }
     }, 1000);
   </script>
