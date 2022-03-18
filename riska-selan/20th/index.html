@@ -32,12 +32,11 @@
       </div>
     </div>
 
-  <script>
-    document.getElementById("song").muted = true;
+  <script> 
     // Set the date we're counting down to
-    // var countDownDate = new Date("Mar 18, 2022 23:46:00").getTime();
+    // var countDownDate = new Date("Mar 18, 2022 23:56:00").getTime();
     var countDownDate = new Date("Mar 19, 2022 00:00:00").getTime();
-    
+
     // Update the count down every 1 second
     var x = setInterval(function () {
 
@@ -58,7 +57,7 @@
         + minutes + "m " + seconds + "s ";
       
         // window.onload = function() {
-        //   var audio = new Audio('song.mp3');
+        // var audio = new Audio('song.mp3');
         // audio.play();
         // }
       // If the count down is over, write some text 
@@ -67,7 +66,6 @@
         // document.getElementById("timer").innerHTML = "EXPIRED";
         document.getElementById("timer").classList.add("hidden");
         document.getElementById("card").classList.remove("hidden");
-        document.getElementById("song").muted = false;
       }
     }, 1000);
   </script>
