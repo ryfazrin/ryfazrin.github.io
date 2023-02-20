@@ -1,0 +1,34 @@
+{
+  "title": "Pazrin",
+  "fullName": "Muhammad Pazrin Andreanor",
+  "role": "Frontend Development Engineer",
+  "socials": [
+    {
+      "id": "1",
+      "title": "Github",
+      "link": "https://github.com/ryfazrin"
+    },
+    {
+      "id": "2",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/muhammad-pazrin-andreanor-950824159/"
+    },
+    {
+      "id": "3",
+      "title": "Twitter",
+      "link": "https://twitter.com/ryfazrin"
+    },
+    {
+      "id": "4",
+      "title": "Blog",
+      "link": "https://rywrite.vercel.app/"
+    },
+    {
+      "id": "5",
+      "title": "Email",
+      "link": "mailto:riansera515@gmail.com"
+    }
+  ],
+  "aboutMe": "Saya memiliki keahlian dalam pengembangan Web Frontend khususnya Framework Vuejs, Reactjs dan pengembangan Tool untuk Frontend. Selama 1 tahun saya menjalani magang pada e-commerce blibli pada bagian Frontend divisi Research & Development. Saya berhasil mengembangkan Integration Test Tools untuk tim developer Frontend blibli. Di divisi yang sama, saya melakukan research untuk meningkatkan performa halaman blibli.",
+  "cvUrl": ""
+}
