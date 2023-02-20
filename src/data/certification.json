@@ -1,0 +1,116 @@
+{
+  "certification": [
+    {
+      "id": "1",
+      "title": "Kampus merdeka: Certificate of Completion Internship at Blibli.com – Frontend Intern.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding Academy: Certificate of Completion Learning path “Pengembang Aplikasi Android dan Multi-Platform”.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas menjadi Front-End Web Developer Expert.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas menjadi React Web Developer Expert.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas menjadi Flutter Developer Expert.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas belajar Prinsip Pemrograman SOLID.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas Belajar Dasar UX Design.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas belajar Dasar-Dasar DevOps.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas memulai Pemrograman Dengan JavaScript.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas memulai Pemrograman Dengan Kotlin.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas memulai Pemrograman Dengan Dart.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas belajar Dasar Pemrograman Web.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Dicoding.com Kelulusan kelas belajar Dasar-dasar Azure Cloud.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Cloud Computing Basics (Cloud 101) an online non-credit course authorized by LearnQuest and offered through Coursera.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "AWS Cloud Practitioner Essentials from www.aws.training.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    },
+    {
+      "id": "1",
+      "title": "Sertifikat Kompetensi SMK Negeri 1 Kotabaru dengan predikat Istimewa dan nilai 98.",
+      "description": "dummy",
+      "imageSrc": "",
+      "url": ""
+    }
+  ]
+}
