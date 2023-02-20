@@ -4,15 +4,16 @@ import { bio, certificates, projects } from './data'
 
 function App() {
   return (
-    <div className="App container px-2 md:artboard artboard-horizontal phone-5 mx-auto">
+    <div className="App mx-auto mockup-window border bg-base-300 my-2 mx-2">
+      <div className="md:px-16 py-4 bg-base-100">
       {/* NAVBAR */}
-      <div className="navbar bg-base-100">
+      <div className="navbar">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
-            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+            <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-base-100">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Contact</a></li>
@@ -44,7 +45,7 @@ function App() {
           <p>I'm {bio.fullName}</p>
           <p>{bio.role}</p>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="md:flex justify-between items-center">
           <ul className="menu menu-horizontal bg-base-200 rounded-box p-2 mt-2">
             {
               bio.socials.map(social => {
@@ -74,7 +75,7 @@ function App() {
         {
           projects.map(project => {
             return (
-              <div key={project.id} tabIndex={project.id} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+              <div key={project.id} tabIndex={project.id} className="collapse collapse-arrow border border-base-300 rounded-box">
                 <input type="checkbox" className="peer" />
                 <div className="collapse-title text-xl font-medium">
                   {project.title}
@@ -103,7 +104,7 @@ function App() {
         {
           certificates.map(certificate => {
             return (
-              <div className="card col-span-1 bg-base-100 shadow-xl">
+              <div className="card col-span-1 shadow-xl">
                 <figure className="px-5 pt-10">
                   <img src="https://via.placeholder.com/300x170" alt="Shoes" className="rounded-xl" />
                 </figure>
@@ -126,7 +127,7 @@ function App() {
             <h1 className="text-5xl font-bold">Contact Me!</h1>
             <p className="py-6">Ingin aplikasi/web sesuai kebutuhan anda? Jangan sungkan untuk berkonsultasi dengan kami.</p>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl">
             <div className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -169,6 +170,7 @@ function App() {
           <p>Copyright © 2023 - with love Ryfazrin</p>
         </div>
       </footer>
+    </div>
     </div>
   )
 }
