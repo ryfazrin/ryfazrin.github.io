@@ -2,59 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ryfazrin</title>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Vite + React</title>
   </head>
-
   <body>
-    <main>
-      <wired-card>
-        <h1>Hi, I'm Pazrin 👋</h1>
-        <p>Muhammad Pazrin Andreanor</p>
-      </wired-card>
-      <header>
-        <div class="hero">
-          <wired-card>
-            <p>About me :</p>
-            <p><wired-link elevation="2" href="https://github.com/ryfazrin">Github</wired-link></p>
-            <p><wired-link elevation="3" href="https://www.linkedin.com/in/muhammad-pazrin-andreanor-950824159/">LinkedIn</wired-link></p>
-            <p><wired-link elevation="1" href="hhttps://rywrite.vercel.app/">My Note</wired-link></p>
-          </wired-card>
-          <wired-image elevation="3" src="./assets/img/ryan.jpg" width="100px"></wired-image>
-        </div>
-      </header>
-      <section>
-        <wired-card elevation="4">
-          <p>🌱 I started programming using php. Typing something in front of the computer makes me addicted to doing it. I used to be a person who was afraid to try new things. 3 years I just played the standard features in php. now i play a website server language in Codeigniter 4, or in Laravel.</p>
-        </wired-card>
-      </section>
-      <section>
-        <wired-card elevation="3">
-          <p>⚡ tried the front-end framework, I really like the JavaScript syntax especially Reactjs. React is easy to read and easy to understand for me.</p>
-        </wired-card>
-      </section>
-      <section>
-        <wired-card elevation="2">
-          <p>🤔 I'm trying to do a little bit of trouble in the native app section. It amazing for me😄. Java which is transformed into kotlin without a semicolon, it presents shortcodes. or Flutter with simple and easy UI writing for multiplatform.</p>
-        </wired-card>
-      </section>
-    </main>
-    <footer>
-      <section>
-        With ❤ Ryfazrin 2021
-      </section>
-    </footer>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
-
-  <script type="module" src="https://unpkg.com/wired-elements?module"></script>
-  <script type="module">
-    const name = document.querySelector("wired-input");
-    const button = document.querySelector("wired-button");
-    button.addEventListener("click", () => {
-      window.alert(`Hello ${name.value.trim()}!`);
-    });
-  </script>
 </html>
