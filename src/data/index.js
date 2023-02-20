@@ -1,9 +1,9 @@
 import bio from './bio.json'
 import resume from './resume.json'
-import projects from './projects.json'
-import certificates from './certificates.json'
+import projects from './projects'
+import certificates from './certificates'
 
-export default {
+export {
   bio,
   resume,
   projects,

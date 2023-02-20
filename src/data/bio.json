@@ -16,7 +16,7 @@
     {
       "id": "3",
       "title": "Twitter",
-      "link": "https://twitter.com/realchetanverma"
+      "link": "https://twitter.com/ryfazrin"
     },
     {
       "id": "4",
@@ -29,5 +29,6 @@
       "link": "mailto:riansera515@gmail.com"
     }
   ],
-  "aboutMe": "Saya memiliki keahlian dalam pengembangan Web Frontend khususnya Framework Vuejs, Reactjs dan pengembangan Tool untuk Frontend. Selama 1 tahun saya menjalani magang pada e-commerce blibli pada bagian Frontend divisi Research & Development. Saya berhasil mengembangkan Integration Test Tools untuk tim developer Frontend blibli. Di divisi yang sama, saya melakukan research untuk meningkatkan performa halaman blibli."
+  "aboutMe": "Saya memiliki keahlian dalam pengembangan Web Frontend khususnya Framework Vuejs, Reactjs dan pengembangan Tool untuk Frontend. Selama 1 tahun saya menjalani magang pada e-commerce blibli pada bagian Frontend divisi Research & Development. Saya berhasil mengembangkan Integration Test Tools untuk tim developer Frontend blibli. Di divisi yang sama, saya melakukan research untuk meningkatkan performa halaman blibli.",
+  "cvUrl": ""
 }
