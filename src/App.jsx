@@ -1,5 +1,6 @@
 import './App.css'
 import githubLogo from './assets/images/github-logo.png'
+import { bio, certificates, projects } from './data'
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li><a>Home</a></li>
-            <li><a>About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a>Contact</a></li>
-            <li><a>Resume</a></li>
+            <li><a >Resume</a></li>
           </ul>
         </div>
         <div className="navbar-end">
@@ -40,24 +41,29 @@ function App() {
       <div className="w-full p-1">
         <div className="text-5xl leading-relaxed">
           <p>Hello 👋</p>
-          <p>I'm Muhammad Pazrin Andreanor</p>
-          <p>Frontend Development Engineer</p>
+          <p>I'm {bio.fullName}</p>
+          <p>{bio.role}</p>
         </div>
         <div className="flex justify-between items-center">
           <ul className="menu menu-horizontal bg-base-200 rounded-box p-2 mt-2">
-            <li><a>Github</a></li>
-            <li><a>LinkedIn</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Email</a></li>
+            {
+              bio.socials.map(social => {
+                return (
+                  <li key={social.id}>
+                    <a href={social.link} target="_blank">{social.title}</a>
+                  </li>
+                )
+              })
+            }
           </ul>
           <button className="btn btn-outline rounded-full">Download CV</button>
         </div>
       </div>
 
       {/* About */}
-      <h1 className="text-2xl my-4">About</h1>
+      <h1 id="about" className="text-2xl my-4">About</h1>
       <div className="w-full">
-        <p>Saya memiliki keahlian dalam pengembangan Web Frontend khususnya Framework Vuejs, Reactjs dan pengembangan Tool untuk Frontend. Selama 1 tahun saya menjalani magang pada e-commerce blibli pada bagian Frontend divisi Research & Development. Saya berhasil mengembangkan Integration Test Tools untuk tim developer Frontend blibli. Di divisi yang sama, saya melakukan research untuk meningkatkan performa halaman blibli.</p>
+        <p>{bio.aboutMe}</p>
       </div>
 
       <div className="divider"></div>
@@ -65,18 +71,80 @@ function App() {
       {/* Works */}
       <h1 className="text-2xl my-4">Works</h1>
       <div className="w-full grid grid-cols-1 gap-4">
-        <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-          <input type="checkbox" className="peer" />
-          <div className="collapse-title text-xl font-medium">
-            Focus me to see content
+        {
+          projects.map(project => {
+            return (
+              <div key={project.id} tabIndex={project.id} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <input type="checkbox" className="peer" />
+                <div className="collapse-title text-xl font-medium">
+                  {project.title}
+                </div>
+                <div className="collapse-content">
+                  <div className="hero-content flex-col lg:flex-row">
+                    <img src="https://via.placeholder.com/1000x700" className="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                      <h1 className="text-5xl font-bold">{project.title}</h1>
+                      <p className="py-6">{project.description}</p>
+                      <a className="btn btn-outline" href={project.url} target="_blank">Source</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )
+          })
+        }
+      </div>
+
+      <div className="divider"></div>
+
+      {/* Certification */}
+      <h1 className="text-2xl my-4">Certifications</h1>
+      <div className="w-full grid grid-cols-3 gap-4 justify-center">
+        {
+          certificates.map(certificate => {
+            return (
+              <div className="card col-span-1 bg-base-100 shadow-xl">
+                <figure className="px-5 pt-10">
+                  <img src="https://via.placeholder.com/300x170" alt="Shoes" className="rounded-xl" />
+                </figure>
+                <div className="card-body items-center text-center">
+                  <p>{certificate.title}</p>
+                  <a className="link link-primary" href={certificate.url} target="_blank">Credential</a>
+                </div>
+              </div>
+            )
+          })
+        }
+      </div>
+
+      <div className="divider"></div>
+
+      {/* Contact */}
+      <div className="hero">
+        <div className="hero-content flex-col lg:flex-row">
+          <div className="text-center lg:text-left">
+            <h1 className="text-5xl font-bold">Contact Me!</h1>
+            <p className="py-6">Ingin aplikasi/web sesuai kebutuhan anda? Jangan sungkan untuk berkonsultasi dengan kami.</p>
           </div>
-          <div className="collapse-content">
-            <div className="hero-content flex-col lg:flex-row">
-              <img src="https://via.placeholder.com/1000x700" className="max-w-sm rounded-lg shadow-2xl" />
-              <div>
-                <h1 className="text-5xl font-bold">Box Office News!</h1>
-                <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <button className="btn">Get Started</button>
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input type="text" placeholder="Your name" className="input input-bordered" />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Message</span>
+                </label>
+                <textarea className="textarea textarea-bordered h-24" placeholder="Write you want"></textarea>
+                <label className="label">
+                  <a href="#" className="label-text-alt link link-hover">or chat via WhatsApp?</a>
+                </label>
+              </div>
+              <div className="form-control mt-6">
+                <button className="btn btn-success">Send</button>
               </div>
             </div>
           </div>
@@ -84,25 +152,6 @@ function App() {
       </div>
 
       <div className="divider"></div>
-
-      {/* Certification */}
-      <h1 className="text-2xl my-4">Certification</h1>
-      <div className="w-full grid grid-cols-3 gap-4">
-        <div className="card col-span-1 bg-base-100 shadow-xl">
-          <figure className="px-5 pt-10">
-            <img src="https://via.placeholder.com/300x170" alt="Shoes" className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="divider"></div>
-
-      {/* Contact */}
-      <div></div>
 
       {/* Footer   */}
       <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
