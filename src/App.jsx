@@ -4,8 +4,8 @@ import { bio, certificates, projects } from './data'
 
 function App() {
   return (
-    <div className="App mx-auto mockup-window border bg-base-300 my-2 mx-2">
-      <div className="md:px-16 py-4 bg-base-100">
+    <div className="App mx-auto md:mockup-window md:border bg-base-300 md:my-2 mx-2">
+      <div className="md:px-16 md:py-4 max-[640px]:px-4 bg-base-100">
       {/* NAVBAR */}
       <div className="navbar">
         <div className="navbar-start">
@@ -40,13 +40,13 @@ function App() {
 
       {/* Header start */}
       <div className="w-full p-1">
-        <div className="text-5xl leading-relaxed">
+        <div className="max-[640px]:text-3xl text-5xl min-[320px]:leading-relaxed">
           <p>Hello 👋</p>
           <p>I'm {bio.fullName}</p>
           <p>{bio.role}</p>
         </div>
-        <div className="md:flex justify-between items-center">
-          <ul className="menu menu-horizontal bg-base-200 rounded-box p-2 mt-2">
+        <div className="flex min-[320px]:justify-center sm:justify-between items-center">
+          <ul className="min-[320px]:hidden sm:inline-flex menu menu-horizontal bg-base-200 rounded-box p-2 mt-2">
             {
               bio.socials.map(social => {
                 return (
@@ -100,11 +100,11 @@ function App() {
 
       {/* Certification */}
       <h1 className="text-2xl my-4">Certifications</h1>
-      <div className="w-full grid grid-cols-3 gap-4 justify-center">
+      <div className="w-full grid grid-cols-3 max-[640px]:grid-cols-1 gap-4 justify-center">
         {
           certificates.map(certificate => {
             return (
-              <div className="card col-span-1 shadow-xl">
+              <div key={certificate.id} className="card col-span-1 shadow-xl">
                 <figure className="px-5 pt-10">
                   <img src="https://via.placeholder.com/300x170" alt="Shoes" className="rounded-xl" />
                 </figure>
