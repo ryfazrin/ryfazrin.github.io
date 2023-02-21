@@ -15,9 +15,9 @@ function App() {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52 bg-base-100">
               <li><a>Home</a></li>
-              <li><a>About</a></li>
-              <li><a>Contact</a></li>
-              <li><a>Resume</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a >Resume</a></li>
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl md:text-3xl">
@@ -29,7 +29,7 @@ function App() {
           <ul className="menu menu-horizontal px-1">
             <li><a>Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a >Resume</a></li>
           </ul>
         </div>
@@ -121,7 +121,7 @@ function App() {
       <div className="divider"></div>
 
       {/* Contact */}
-      <div className="hero">
+      <div id="contact" className="hero">
         <div className="hero-content flex-col lg:flex-row">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Contact Me!</h1>
