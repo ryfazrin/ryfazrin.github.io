@@ -1,4 +1,34 @@
+import { useState } from "react"
+import Swal from 'sweetalert2'
+
 function Contact () {
+  const [name, setName] = useState('')
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('')
+
+  function sendEmail () {
+    Swal.fire({
+      icon: 'success',
+      title: 'Your email has been send.',
+    })
+    window.open(`mailto:muhammadpazrinandreanor@gmail.com?subject=${subject}&body=${message}`)
+    setName('')
+    setSubject('')
+    setMessage('')
+  }
+
+  const onChangeNameHandler = event => {
+    setName(event.target.value)
+  }
+
+  const onChangeSubjectHandler = event => {
+    setSubject(event.target.value)
+  }
+
+  const onChangeMessageHandler = event => {
+    setMessage(event.target.value)
+  }
+
   return (
     <div id="contact" className="hero">
         <div className="hero-content flex-col lg:flex-row">
@@ -12,19 +42,27 @@ function Contact () {
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
-                <input type="text" placeholder="Your name" className="input input-bordered" />
+                <input type="text" value={name} onChange={onChangeNameHandler} placeholder="Your name" className="input input-bordered" />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Subject</span>
+                </label>
+                <input type="text" value={subject} onChange={onChangeSubjectHandler} placeholder="Subject" className="input input-bordered" />
               </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Message</span>
                 </label>
-                <textarea className="textarea textarea-bordered h-24" placeholder="Write you want"></textarea>
+                <textarea value={message} onChange={onChangeMessageHandler} className="textarea textarea-bordered h-24" placeholder="Write you want"></textarea>
                 <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">or chat via WhatsApp?</a>
+                  <a href='https://wa.me/082251607524?text=Hai Pazrin, saya ingin berkonsultasi dengan anda.' target="_blank" className="label-text-alt link link-hover">
+                    or chat via WhatsApp? Text now.
+                  </a>
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-success">Send</button>
+                <button type="submit" onClick={sendEmail} className="btn btn-success">Send</button>
               </div>
             </div>
           </div>
