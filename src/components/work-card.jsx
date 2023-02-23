@@ -1,4 +1,5 @@
 function WorkCard(project) {
+  console.log(project.imageSrc !== '')
   return (
     <div tabIndex={project.id} className="collapse collapse-arrow border border-base-300 rounded-box">
       <input type="checkbox" className="peer" />
@@ -6,7 +7,7 @@ function WorkCard(project) {
         {project.title}
       </div>
       <div className="collapse-content">
-        <div className={"flex-col lg:flex-row" + project.imageSrc !== '' && "hero-content"}>
+        <div className={"flex-col lg:flex-row " + (project.imageSrc !== '' && "hero-content")}>
           {project.imageSrc !== '' && 
           <img src={project.imageSrc} className="max-w-sm rounded-lg shadow-2xl" /> }
           <div>
