@@ -1,5 +1,4 @@
-import { bio } from '../data'
-function Navbar () {
+function Navbar ({ bio }) {
   return (
     <div className="navbar">
       <div className="navbar-start">
@@ -11,6 +10,15 @@ function Navbar () {
             <li><a>Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            {
+              bio.socials.map(social => {
+                return (
+                  <li key={social.id}>
+                    <a href={social.link} target="_blank">{social.title}</a>
+                  </li>
+                )
+              })
+            }
             <li><a href={bio.resumeUrl} target="_blank">Resume</a></li>
           </ul>
         </div>
