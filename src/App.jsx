@@ -6,6 +6,7 @@ import Divider from './components/divider'
 import Footer from './components/footer'
 import Header from './components/header'
 import Navbar from './components/navbar'
+import PaginatedItems from './components/paginations'
 import WorksSection from './components/works-section'
 import { bio, certificates, projects } from './data'
 
@@ -21,7 +22,7 @@ function App() {
         <WorksSection projects={projects} />
         <Divider />
 
-        <Certifications certificates={certificates} />
+        <PaginatedItems certificates={certificates} itemsPerPage={3} />
         <Divider />
 
         <Contact />
