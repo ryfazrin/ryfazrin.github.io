@@ -28,7 +28,7 @@ function Navbar () {
         </ul>
       </div>
       <div className="navbar-end">
-        <a href='https://wa.me/082251607524?text=Hai Pazrin, saya ingin menawarkan anda pekerjakan.' target="_blank" className="btn">
+        <a href='https://wa.me/6282251607524?text=Hai Pazrin, saya ingin menawarkan anda pekerjaan.' target="_blank" className="btn">
           Hire Me
         </a>
       </div>
