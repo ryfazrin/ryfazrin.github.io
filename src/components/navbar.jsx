@@ -1,3 +1,5 @@
+import { bio } from '../data'
+
 function Navbar () {
   return (
     <div className="navbar">
@@ -10,7 +12,7 @@ function Navbar () {
             <li><a>Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a >Resume</a></li>
+            <li><a href={bio.resumeUrl} target="_blank">Resume</a></li>
           </ul>
         </div>
         <a className="btn btn-ghost normal-case text-xl md:text-3xl">
@@ -23,7 +25,7 @@ function Navbar () {
           <li><a>Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a >Resume</a></li>
+          <li><a href={bio.resumeUrl} target="_blank">Resume</a></li>
         </ul>
       </div>
       <div className="navbar-end">

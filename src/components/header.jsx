@@ -18,7 +18,7 @@ function Header ({ bio }) {
             })
           }
         </ul>
-        <button className="btn btn-outline rounded-full">Download CV</button>
+        <a href={bio.cvUrl} target="_blank" className="btn btn-outline rounded-full">Download CV</a>
       </div>
     </div>
   )
