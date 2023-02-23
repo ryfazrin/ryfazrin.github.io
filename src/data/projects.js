@@ -52,7 +52,7 @@ const projects = [
     "id": "8",
     "title": "Money Writer App - Flutter",
     "description": "Aplikasi Pengelolaan Keuangan proyek akhir SIB Dicoding (Android, Flutter)",
-    "imageSrc": "",
+    "imageSrc": "https://user-images.githubusercontent.com/39837799/147304765-07bd9185-cba1-4d3c-a31a-d19f9448c354.gif",
     "url": "https://github.com/ravihabibillah/money_writer_app"
   },
   {
