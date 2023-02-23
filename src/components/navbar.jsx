@@ -1,5 +1,4 @@
 import { bio } from '../data'
-
 function Navbar () {
   return (
     <div className="navbar">

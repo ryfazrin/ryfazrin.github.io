@@ -1,5 +1,4 @@
 function WorkCard(project) {
-  console.log(project.imageSrc !== '')
   return (
     <div tabIndex={project.id} className="collapse collapse-arrow border border-base-300 rounded-box">
       <input type="checkbox" className="peer" />
