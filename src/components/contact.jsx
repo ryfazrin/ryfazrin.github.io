@@ -51,7 +51,7 @@ function Contact () {
                 <input type="text" value={subject} onChange={onChangeSubjectHandler} placeholder="Subject" className="input input-bordered" />
                 <textarea value={message} onChange={onChangeMessageHandler} className="textarea textarea-bordered h-24" placeholder="Write you want"></textarea>
                 <label className="label">
-                  <a href='https://wa.me/082251607524?text=Hai Pazrin, saya ingin berkonsultasi dengan anda.' target="_blank" className="label-text-alt link link-hover">
+                  <a href='https://wa.me/6282251607524?text=Hai Pazrin, saya ingin berkonsultasi dengan anda.' target="_blank" className="label-text-alt link link-hover">
                     or chat via WhatsApp? Text now.
                   </a>
                 </label>
