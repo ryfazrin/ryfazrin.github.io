@@ -1,6 +1,6 @@
 {
   "name": "ryfazrin.github.io",
-  "version": "3.0.1-alpha",
+  "version": "3.2.1-beta",
   "type": "module",
   "scripts": {
     "dev": "vite",
