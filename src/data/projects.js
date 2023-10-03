@@ -9,7 +9,7 @@ const projects = [
   {
     "id": "2",
     "title": "Research Web worker & Partytown - R&D Blibli.com",
-    "description": "Research Web worker & Partytown at Blibli.com. Pengujian Main thread dan Web worker (Research, JavaScript, Partytown).",
+    "description": "Research ini meneliti penggunaan web worker dan library partytown dalam mengelola script dari third-party pada web worker. Tujuannya yaitu untuk meningkatkan performance kecepatan tampilan aplikasi pada main thread di web blibli dengan mengurangi/memindahkan eksekusi script dari third-party tanpa menghilangkan fungsional third-party itu sendiri.",
     "imageSrc": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisRSmT120zz7X3A2wALLtDZstOU_hnAUJolfWaAjumBSbe0srDh6Fq1vwehyuhlz1HIrrH8Z7qwXxJekx_4_GeAKGPG04sJOaY9BWsO1LJyY_0z8OlbM50TPQrZaAKMaSknMNkrhaKc0ymIX-Yfbmptdm-GGGeKCYHS0dWKcKNrd9ZcnKc1meY1K_I/s16000/web-worker-partytown.png",
     "url": "https://github.com/ryfazrin/web-worker"
   },
