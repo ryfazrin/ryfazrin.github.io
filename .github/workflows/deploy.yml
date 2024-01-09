@@ -32,5 +32,5 @@ jobs:
           git --work-tree dist add --all
           git --work-tree dist commit -m "GitHub Pages Deployment"
           git push origin HEAD:gh-pages --force
-          git checkout -f main
+          git checkout -f master
           git branch -D gh-pages
