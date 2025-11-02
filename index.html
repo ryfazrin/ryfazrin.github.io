@@ -1,12 +1,359 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="winter">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Pazrin</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Multibahasa - Muhammad Pazrin Andreanor</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Print styles for A4 -->
+  <style>
+    /* Set A4 page size and sensible margins for printing */
+    @page { size: A4; margin: 20mm; }
+
+    @media print {
+      html, body { width: 210mm; height: 297mm; }
+      /* Hide elements we don't want on print (buttons, etc.) */
+      .no-print { display: none !important; }
+      /* Avoid unnecessary shadows/backgrounds */
+      .shadow-lg { box-shadow: none !important; }
+      /* Ensure page breaks where needed */
+      .page-break { page-break-after: always; }
+      /* Add right margin to profile image when printing so text doesn't stick to it */
+      .profile-img { margin-right: 12mm; }
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <div class="max-w-3xl mx-auto pt-0 p-6 bg-white shadow-lg mb-10 rounded">
+    <!-- Header / Profil -->
+    <div class="flex flex-row items-center">
+      <img src="profil.jpg" alt="Foto Profil" class="w-32 h-32 rounded object-cover object-top mb-0 mr-6 profile-img">
+      <div class="flex flex-col gap-1">
+        <h1 class="text-2xl font-bold">MUHAMMAD PAZRIN ANDREANOR</h1>
+        <p class="text-sm text-gray-600">Jl. Tirawan, Kotabaru, Kalimantan Selatan, Indonesia</p>
+        <p class="text-sm text-gray-600">Telepon / Phone:
+          <a href="https://wa.me/6282251607524" class="inline-flex items-center gap-2 text-green-600 underline" target="_blank" rel="noopener" aria-label="Chat via WhatsApp">
+            <!-- WhatsApp SVG (small) -->
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.52 3.48A11.86 11.86 0 0012.03.25 11.99 11.99 0 001.5 12c0 2.11.55 4.12 1.6 5.92L.25 23.25l5.6-1.44A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-1.86-.44-3.62-1.48-5.12zM12 21.5c-1.04 0-2.06-.14-3.02-.42l-.22-.07-3.33.86.9-3.25-.13-.27A9.47 9.47 0 012.5 12c0-5.25 4.25-9.5 9.5-9.5 2.53 0 4.9.99 6.68 2.78A9.46 9.46 0 0121.5 12c0 5.25-4.25 9.5-9.5 9.5z"/>
+              <path d="M17.45 14.2c-.3-.15-1.77-.87-2.04-.97-.27-.1-.46-.15-.65.15-.19.3-.74.97-.9 1.17-.16.2-.31.22-.61.07-.3-.15-1.27-.47-2.41-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.6.13-.12.3-.31.45-.47.15-.16.2-.27.3-.45.1-.18.05-.34-.02-.49-.07-.15-.65-1.57-.9-2.17-.24-.57-.49-.49-.66-.5l-.56-.01c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27 0 1.33.98 2.62 1.12 2.8.15.18 1.95 3 4.72 4.2 2.77 1.2 2.77.8 3.27.75.5-.05 1.62-.66 1.85-1.3.22-.64.22-1.18.15-1.3-.07-.12-.27-.18-.57-.33z"/>
+            </svg>
+            +62 822-5160-7524
+          </a>
+        </p>
+        <p class="text-sm text-gray-600">Email:
+          <a href="mailto:muhammadpazrinandreanor@gmail.com" class="inline-flex items-center gap-2 text-blue-600 underline" aria-label="Send email">
+            <!-- Mail SVG -->
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8.5v7.75A2.75 2.75 0 005.75 19h12.5A2.75 2.75 0 0021 16.25V8.5" />
+              <path d="M21 8.5L12 14 3 8.5" />
+            </svg>
+            muhammadpazrinandreanor@gmail.com
+          </a>
+        </p>
+        <p class="text-sm text-gray-600">LinkedIn:
+          <a href="https://www.linkedin.com/in/muhammad-pazrin-andreanor-950824159" class="inline-flex items-center gap-2 underline" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">
+            <!-- LinkedIn SVG -->
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.98 3.5a2.5 2.5 0 11-.001 5.001A2.5 2.5 0 014.98 3.5zM3 9h4v12H3zM14 9c-1.87 0-2.72 1.02-3.18 1.75V9H8v12h4v-6c0-.39.03-.78.45-1.22.42-.44 1.07-.8 1.95-.8 1.37 0 1.92.98 1.92 3.05V21h4v-6.5c0-3.5-1.87-5.5-4.77-5.5z"/>
+            </svg>
+            muhammad-pazrin-andreanor
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Print button (hidden on printed output) -->
+    <div class="flex justify-end mb-4 no-print">
+      <div class="flex items-center gap-2">
+        <label for="print-orientation" class="sr-only">Print orientation</label>
+        <select id="print-orientation" class="border rounded px-2 py-1 text-sm">
+          <option value="portrait">Portrait</option>
+          <option value="landscape">Landscape</option>
+        </select>
+        <button onclick="printA4()" class="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">Print (A4)</button>
+      </div>
+    </div>
+
+    <hr class="my-6">
+
+    <!-- Profil Singkat / Professional Summary -->
+    <cv-section title="PROFIL SINGKAT / PROFESSIONAL SUMMARY">
+      <p>
+        Saya adalah seorang Magister Ilmu Komputer dan Fullstack Developer dengan pengalaman lebih dari 7 tahun di bidang pengembangan web, khususnya menggunakan React, Vue, dan Node.js, serta memiliki ketertarikan yang kuat pada bidang Machine Learning.<br>
+        <span class="italic text-blue-500">I am a Master of Computer Science and Fullstack Developer with over 7 years of experience in web development, specializing in React, Vue, and Node.js, and deeply passionate about Machine Learning.</span>
+      </p>
+    </cv-section>
+
+
+    <!-- Pendidikan / Education -->
+    <cv-section title="PENDIDIKAN / EDUCATION">
+      <div class="space-y-1">
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-medium">Universitas Gadjah Mada (UGM)</p>
+            <p class="italic text-sm text-gray-600">Master of Computer Science</p>
+          </div>
+          <p class="text-sm text-gray-600">February 2024 – July 2025</p>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-medium">Universitas Teknologi Digital Indonesia</p>
+            <p class="italic text-sm text-gray-600">Bachelor of Computer Science, Informatics</p>
+          </div>
+          <p class="text-sm text-gray-600">August 2019 – February 2023</p>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-medium">Dicoding Academy</p>
+            <p class="italic text-sm text-gray-600">Android & Multi-Platform App Developer Training</p>
+          </div>
+          <p class="text-sm text-gray-600">September 2021 – January 2022</p>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="font-medium">SMK Negeri 1 Kotabaru</p>
+            <p class="italic text-sm text-gray-600">Computer Software Engineering</p>
+          </div>
+          <p class="text-sm text-gray-600">2016 – 2019</p>
+        </div>
+      </div>
+    </cv-section>
+
+
+    <!-- Pengalaman Kerja / Work Experience -->
+    <cv-section title="PENGALAMAN KERJA / WORK EXPERIENCE">
+
+      <div class="mb-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-lg font-bold">CODE.ID (PT. Code Development Indonesia)</h3>
+            <p class="italic">Software Developer</p>
+          </div>
+          <div class="text-right text-sm text-gray-600">
+            <p>South Jakarta, Indonesia</p>
+            <p>April 2023 – Present</p>
+          </div>
+        </div>
+
+        <p class="mt-2">
+          CODE.ID adalah perusahaan pengembang perangkat lunak yang berfokus pada pembuatan solusi kustom, termasuk aplikasi web dan mobile, yang disesuaikan dengan kebutuhan bisnis.<br>
+          <span class="italic text-blue-500">CODE.ID is a software development company that specializes in creating custom solutions, including web and mobile applications, tailored to meet the specific needs of businesses.</span>
+        </p>
+
+        <ul class="list-disc list-outside pl-5 mt-3 space-y-2">
+          <li>Mengembangkan aplikasi web CRM Asuransi, Aplikasi Klaim Asuransi, dan Aplikasi Pembayaran Asuransi menggunakan Next.js, menghasilkan pengalaman pengguna yang mulus dan performa yang optimal.<br>
+            <span class="italic text-blue-500">Developed an insurance CRM App, Insurance Claim App, and Payment Insurance web application using Next.js, delivering a seamless user experience and optimizing performance.</span>
+          </li>
+
+          <li>Mengembangkan Sistem Manajemen Kontrak Rumah Sakit menggunakan Next.js, memfasilitasi komunikasi dan pengelolaan dokumen yang lancar antara staf kesehatan dan administrator.<br>
+            <span class="italic text-blue-500">Developed a hospital’s Contract Management System using Next.js, facilitating seamless communication and document management between healthcare staff and administrators.</span>
+          </li>
+
+          <li>Berhasil membuat ulang dan meningkatkan “starter” proyek lama ke Next.js, memastikan fitur terbaik dan kemudahan perawatan yang lebih baik.<br>
+            <span class="italic text-blue-500">Successfully rewrote and upgraded a legacy “starter project” to Next.js, ensuring cutting-edge features and improved maintainability.</span>
+          </li>
+
+          <li>Mengimplementasikan “starter” proyek baru menggunakan Vue dan Nuxt.js, memberikan fondasi yang kuat untuk pengembangan yang akan datang.<br>
+            <span class="italic text-blue-500">Conceptualized and implemented a new “starter project” using Vue and Nuxt.js, providing a robust foundation for future development.</span>
+          </li>
+
+          <li>Menyusun dokumentasi boilerplate yang terintegrasi dengan Storybook dan Docusaurus, mempercepat proses onboarding dan berbagi pengetahuan untuk tim pengembang.<br>
+            <span class="italic text-blue-500">Authored comprehensive boilerplate documentation integrated with Storybook and Docusaurus, streamlining onboarding and knowledge sharing for development teams.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-lg font-bold">Blibli (PT. Global Digital Niaga)</h3>
+            <p class="italic">Software Development Engineer Intern</p>
+          </div>
+          <div class="text-right text-sm text-gray-600">
+            <p>Central Jakarta, Indonesia</p>
+            <p>February 2022 – January 2023</p>
+          </div>
+        </div>
+
+        <p class="mt-2">
+          Blibli adalah salah satu platform e-commerce terbesar di Indonesia. Sebagai bagian dari tim profesional divisi Riset dan Pengembangan (R&D).<br>
+          <span class="italic text-blue-500">Blibli is one of Indonesia’s largest e-commerce platforms. Being part of the professional team of the Research and Development division (R&D).</span>
+        </p>
+
+        <ul class="list-disc list-outside pl-5 mt-3 space-y-2">
+          <li>Mengembangkan tools yang memungkinkan pengembang Front-end melakukan pengujian End-to-End secara mandiri, mempercepat waktu pengiriman dan meningkatkan kualitas keseluruhan proyek. <br>
+            <span class="italic text-blue-500">Developed a tool that empowered Front-end developers to conduct End-to-End testing on their own, resulting in faster delivery times and improved overall project quality.</span>
+          </li>
+
+          <li>Mengembangkan situs penjualan tiket inovatif di Blibli yang merevolusi cara orang membeli tiket untuk festival “We The Fest”.<br>
+            <span class="italic text-blue-500">Developed an innovative ticket-selling website on Blibli that revolutionized the way people purchased tickets for the “We The Fest” festival.</span>
+          </li>
+
+          <li>Merancang dan mengembangkan situs web dinamis untuk menampilkan hasil lelang Histeria 12/12 menggunakan teknologi Vue.js.<br>
+            <span class="italic text-blue-500">Designed and developed a dynamic website to display the auction results of Histeria 12/12 using Vue.js technology.</span>
+          </li>
+
+          <li>Menerapkan strategi inovatif untuk mengelola third-party scripts, yang secara signifikan meningkatkan performa rendering situs Blibli serta meningkatkan keterlibatan dan penjualan pelanggan.<br>
+            <span class="italic text-blue-500">Implemented an innovative strategy for managing third-party scripts, leading to a substantial improvement in rendering performance of the Blibli website and driving up customer engagement and sales.</span>
+          </li>
+
+          <li>Membawa wawasan dan keterampilan pemecahan masalah berharga dari Divisi R&D ke tim pengembangan Front-end, membantu mengidentifikasi dan memperbaiki masalah yang memengaruhi kinerja produk.<br>
+            <span class="italic text-blue-500">Brought valuable insights and troubleshooting skills from the R&D Division to Front-end development teams, providing essential help in identifying and fixing issues that impacted product performance.</span>
+          </li>
+
+          <li>Menggunakan JavaScript, Node.js, NPM, Vue.js, Jest, Playwright, dan Docker.<br>
+            <span class="italic text-blue-500">Using JavaScript, Node.js, NPM, Vue.js, Jest, Playwright, and Docker.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Universitas Teknologi Digital Indonesia -->
+      <div class="mb-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-lg font-bold">Universitas Teknologi Digital Indonesia</h3>
+            <p class="italic">Teaching Assistant</p>
+          </div>
+          <div class="text-right text-sm text-gray-600">
+            <p>Yogyakarta, Indonesia</p>
+            <p>February 2020 – July 2020</p>
+          </div>
+        </div>
+
+        <ul class="list-disc list-outside pl-5 mt-3 space-y-2">
+          <li>Membantu dosen dalam menyiapkan materi pembelajaran, mengelola kelas, dan memantau kehadiran mahasiswa.<br>
+            <span class="italic text-blue-500">Assisted lecturers in preparing learning materials, managing classes, and monitoring student attendance.</span>
+          </li>
+
+          <li>Membimbing mahasiswa dalam memahami konsep algoritma dan pemrograman menggunakan Java dan Flowgorithm.<br>
+            <span class="italic text-blue-500">Guided students in understanding algorithm and programming concepts using Java and Flowgorithm.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Computer Media Utama -->
+      <div class="mb-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-lg font-bold">Computer Media Utama</h3>
+            <p class="italic">Full Stack Developer</p>
+          </div>
+          <div class="text-right text-sm text-gray-600">
+            <p>Kotabaru, South Kalimantan, Indonesia</p>
+            <p>May 2019 – July 2019</p>
+          </div>
+        </div>
+
+        <p class="mt-2">
+          Berperan sebagai konsultan TI di Kotabaru yang menyediakan solusi inovatif untuk masyarakat, mengembangkan aplikasi dan platform digital untuk meningkatkan efisiensi layanan lokal.<br>
+          <span class="italic text-blue-500">Acted as an IT consultant in Kotabaru, delivering innovative digital solutions for community benefit and developing modern applications for local services.</span>
+        </p>
+
+        <ul class="list-disc list-outside pl-5 mt-3 space-y-2">
+          <li>Mengembangkan aplikasi pembayaran air PDAM Kotabaru dan marketplace lokal tukarjual.com menggunakan Vue.js dan CodeIgniter.<br>
+            <span class="italic text-blue-500">Developed a water bill payment app for PDAM Kotabaru and local marketplace tukarjual.com using Vue.js and CodeIgniter.</span>
+          </li>
+        </ul>
+      </div>
+    </cv-section>
+
+    <!-- Certifications & Achievements -->
+    <cv-section title="CERTIFICATIONS & ACHIEVEMENTS">
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 text-sm">
+        <!-- Kolom 1 -->
+        <div class="space-y-2">
+          <p><strong>Expert of Front-end Web App</strong><br><span class="italic">by Dicoding, 2022</span></p>
+          <p><strong>SOLID Programming Principles</strong><br><span class="italic">by Dicoding, 2021</span></p>
+          <p><strong>Basic AI</strong><br><span class="italic">by Dicoding, 2024</span></p>
+          <p><strong>Data Analytic with Python</strong><br><span class="italic">by Dicoding, 2024</span></p>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="space-y-2">
+          <p><strong>Expert of React App</strong><br><span class="italic">by Dicoding, 2023</span></p>
+          <p><strong>UI/UX Design</strong><br><span class="italic">by Dicoding, 2022</span></p>
+          <p><strong>Python Programming</strong><br><span class="italic">by Dicoding, 2024</span></p>
+          <p><strong>Basic of Machine Learning</strong><br><span class="italic">by Dicoding, 2024</span></p>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div class="space-y-2">
+          <p><strong>Expert of Flutter App</strong><br><span class="italic">by Dicoding, 2022</span></p>
+          <p><strong>Basic of Back-end</strong><br><span class="italic">by Dicoding, 2022</span></p>
+          <p><strong>Basic SQL</strong><br><span class="italic">by Dicoding, 2024</span></p>
+          <p><strong>How to Debug Web App in Production</strong><br><span class="italic">Standout presentation by Me at Blibli, 2022</span></p>
+        </div>
+      </div>
+    </cv-section>
+
+
+    <!-- Skills & Interests -->
+    <cv-section title="SKILLS & INTERESTS">
+      <ul class="list-disc list-outside pl-5 space-y-2">
+        <li><strong>Web Programming:</strong> 7+ years of web development using Node.js, React, Vue.js, Laravel, and CodeIgniter.</li>
+        <li><strong>Mobile Programming:</strong> 1+ years of mobile development using Android Kotlin and Flutter.</li>
+        <li><strong>Software Testing Tools:</strong> 2+ years of experience with Jest.js, Playwright, Cypress, Karma, and Jasmine.</li>
+        <li><strong>Other Tech Skills:</strong> API OpenAI, LLM, Google Colab, Jupyter Notebook, Java, Git, Docker, Cloud, SQL, MongoDB.</li>
+        <li><strong>Interpersonal Skills:</strong> Communication, Adaptability, Professional Ethics, Project Management, Teamwork.</li>
+      </ul>
+    </cv-section>
+  </div>
+  <script>
+    // Define <cv-section> Web Component (simple MDN-style component using Shadow DOM)
+    class CVSection extends HTMLElement {
+      constructor() {
+        super();
+        const shadow = this.attachShadow({ mode: 'open' });
+        const title = this.getAttribute('title') || '';
+        shadow.innerHTML = `
+          <style>
+            :host { display:block; margin-bottom:1.5rem; }
+            h2 { font-size:1.125rem; font-weight:600; padding-bottom:0.5rem; border-bottom:1px solid #e5e7eb; margin:0 0 1rem 0; }
+            ::slotted(*) { display:block; }
+            @media print { h2 { border-bottom-color:#e5e7eb; } }
+          </style>
+          <section>
+            <h2>${title}</h2>
+            <div class="slot"><slot></slot></div>
+          </section>
+        `;
+      }
+    }
+    customElements.define('cv-section', CVSection);
+
+    // Trigger browser print dialog (A4 styles provided via @page/@media print)
+    function printA4() {
+      const sel = document.getElementById('print-orientation');
+      const orientation = (sel && sel.value) ? sel.value : 'portrait';
+      const styleId = 'print-orientation-style';
+      // remove existing style if any
+      const old = document.getElementById(styleId);
+      if (old) old.remove();
+
+      const style = document.createElement('style');
+      style.id = styleId;
+      style.textContent = `@page { size: A4 ${orientation}; margin: 20mm; }`;
+      document.head.appendChild(style);
+
+      const cleanup = () => {
+        // remove injected style after printing
+        const s = document.getElementById(styleId);
+        if (s) s.remove();
+        window.removeEventListener('afterprint', cleanup);
+      };
+      window.addEventListener('afterprint', cleanup);
+
+      // Give browser a tiny moment to register the new @page rule
+      setTimeout(() => window.print(), 80);
+    }
+  </script>
+</body>
+
 </html>
